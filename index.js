@@ -25,16 +25,13 @@ function ternaryCheckCity(NYC){
     }
 
 
-function switchOnCharmFromTip(generous){
-  if (generous === 'generous'){
-    return 'Thank you so much.'
-
-  }
-  else if (generous === 'not as generous'){
+function switchOnCharmFromTip(tip){
+ switch(tip){
+ case "generous":
+    return "Thank you so much.";
+  case "not as generous":
     return 'Thank you.'
-  }
-  else {
-    return 'Bye.'
-  }
-    
+  case "thanks for everything":
+    return "Bye."
+ }
 }
